@@ -12,6 +12,7 @@
           <th>Check In</th>
           <th>Check Out</th>
           <th>Employee</th>
+          <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -20,6 +21,11 @@
             <td><%= check['check_in'] %></td>
             <td><%= check['check_out'] %></td>
             <td><%= check['user_id'] %></td>
+            <%if check['check_out'].nil? %>
+              <td><%= link_to 'check out', edit_record_path(id: check['id']), :class => 'btn btn-info' %></td>
+            <% else %>
+              <td style="color: blue;">Finish</td>
+            <% end %>
           </tr>
         <% end %>
         </tbody>

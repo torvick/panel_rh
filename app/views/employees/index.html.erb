@@ -30,7 +30,7 @@
             <td><%= employee['phone'] %></td>
             <td><%= "#{employee['state']} #{employee['suburb']} #{employee['address']} #{employee['number_ext']} #{employee['number_int']} #{employee['postal_code']} " %></td>
             <td><%= link_to 'Edit',     edit_employee_path(employee['id']), :class => 'btn btn-info' %></td>
-            <td><%= link_to 'Records',  reports_path(employee_id: employee['id']), :class => 'btn btn-primary' %></td>
+            <td><%= link_to 'Records',  records_path(employee_id: employee['id']), :class => 'btn btn-primary' %></td>
           </tr>
         <% end %>
         </tbody>

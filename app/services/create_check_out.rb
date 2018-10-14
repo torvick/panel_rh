@@ -1,4 +1,4 @@
-class CreateRecord
+class CreateCheckOut
   def initialize(args)
     @args     = args
     @token    = args[:token]
@@ -11,20 +11,19 @@ class CreateRecord
   end
 
   def send!
-    HTTParty.post(build_url, headers: build_headers, body: build_body)
+    HTTParty.put(build_url, headers: build_headers, body: build_body)
   end
 
   def build_body
     {
         registration: {
-            check_in:  @args[:records][:check_in],
-            user_id:   @args[:records][:employees_id]
+            check_out:  @args[:records][:check_out]
         }
     }
   end
 
   def build_url
-    "https://api-rh.herokuapp.com/api/v1/check_in"
+    "https://api-rh.herokuapp.com/api/v1/check_out/#{@args[:id]}"
   end
 
   def build_headers

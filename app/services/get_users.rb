@@ -4,7 +4,7 @@ class GetUsers
     @id           = args[:employee_id]
     @companie_id  = args[:companie_id]
     @token        = args[:token]
-    @options      = { headers: build_headers }
+    @options      = { headers: build_headers, query: {} }
   end
 
   # Public Interface
@@ -13,6 +13,7 @@ class GetUsers
   end
 
   def send!
+    @options[:query][:companie_id] = @companie_id if !@companie_id.nil?
     HTTParty.get(build_url, @options)
   end
 
