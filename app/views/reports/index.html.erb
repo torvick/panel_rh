@@ -1,0 +1,29 @@
+<div class="space_padding"></div>
+<div align="center">
+  <h1>Reports</h1>
+</div>
+<div class="space_padding"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped table-condensed">
+        <thead>
+        <tr>
+          <th>Check In</th>
+          <th>Check Out</th>
+          <th>Employee</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @reports.each do |check| %>
+          <tr>
+            <td><%= check['check_in'] %></td>
+            <td><%= check['check_out'] %></td>
+            <td><%= check['user_id'] %></td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
