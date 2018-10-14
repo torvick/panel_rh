@@ -1,9 +1,11 @@
 class GetRecords
   def initialize(args)
-    @id      = args[:employee_id]
-    @token = args
-    @options = {
-        headers: build_headers
+    @id_employee  = args[:employee_id]
+    @id           = args[:record_id]
+    @token        = args
+    @options      = {
+        headers: build_headers,
+        query:{}
     }
   end
 
@@ -13,6 +15,7 @@ class GetRecords
   end
 
   def send!
+    @options[:query][:employee_id] = @id_employee if !@id_employee.nil?
     HTTParty.get(build_url, @options)
   end
 

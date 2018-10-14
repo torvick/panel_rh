@@ -4169,3 +4169,673 @@ Processing by EmployeesController#edit as HTML
 Completed 200 OK in 512ms (Views: 126.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/employees/3/edit" for 127.0.0.1 at 2018-10-14 00:48:06 -0500
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 13573ms (Views: 532.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 00:48:29 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 441ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?companie_id=1" for 127.0.0.1 at 2018-10-14 00:48:31 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"companie_id"=>"1"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 487ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees/3/edit" for 127.0.0.1 at 2018-10-14 00:48:33 -0500
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 454ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 00:48:35 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 471ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 00:48:38 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 450ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 00:48:39 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 406ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 00:48:39 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 430ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 00:48:46 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 401ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 00:51:54 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 528ms (Views: 178.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:51:59 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:53:22 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 97ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:53:41 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 138ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:54:07 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 100ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:55:10 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 129ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:55:41 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 111ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 00:56:11 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 457ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 00:56:12 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 393ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:56:21 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 98ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 00:57:20 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 419ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 00:57:23 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 436ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2018-10-14 00:57:25 -0500
+Processing by EmployeesController#new as HTML
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 424ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 00:58:26 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 437ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:58:27 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 1355ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    11: 
+    12:         <div class="form-group">
+    13:           <%#= f.text_field :companies_id, autofocus: true, :class => "form-control input-lg", :placeholder => "companies_id", required: true %>
+    14:           <%= f.select :employees_id, options_for_select(@employees.map{ |c|["#{c['name']} #{c['rfc']}", c['id']]}.uniq), {include_blank: 'Select Companie'}, { :class => 'form-control', required: true}%>
+    15:         </div>
+    16: 
+    17:         <hr class="colorgraph">
+  
+app/views/reports/new.html.erb:14:in `block in _app_views_reports_new_html_erb___1346293722828858351_70132515390380'
+app/views/reports/new.html.erb:5:in `_app_views_reports_new_html_erb___1346293722828858351_70132515390380'
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:59:36 -0500
+Processing by ReportsController#new as HTML
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ([{"id"=>3, "name"=>"Victor", "paternal"=>"Urquides", "maternal"=>"Puentes", "rfc"=>"UUPV890828P95", "phone"=>"015520840226", "email"=>"vurquides@metricas.mx", "city"=>"Cdmx", "number_ext"=>"15", "number_int"=>"0", "postal_code"=>"09820", "state"=>"CDMX", "suburb"=>"CDMX", "address"=>"DAKOTA", "role"=>"employee", "status"=>true, "companies_id"=>1, "registrations"=>[]}, {"id"=>2, "name"=>"Prueba2", "paternal"=>"Prueba2", "maternal"=>"Prueba2", "rfc"=>nil, "phone"=>"5510101010", "email"=>"prueba2@gmail.com", "city"=>nil, "number_ext"=>nil, "number_int"=>nil, "postal_code"=>nil, "state"=>nil, "suburb"=>nil, "address"=>nil, "role"=>"employee", "status"=>true, "companies_id"=>1, "registrations"=>[]}, {"id"=>1, "name"=>"Victor", "paternal"=>"Urquides", "maternal"=>"Puentes", "rfc"=>nil, "phone"=>"5520840226", "email"=>"vh.urquides@gmail.com", "city"=>nil, "number_ext"=>nil, "number_int"=>nil, "postal_code"=>nil, "state"=>nil, "suburb"=>nil, "address"=>nil, "role"=>"admin", "status"=>true, "companies_id"=>1, "registrations"=>[]}]):
+  
+app/controllers/application_controller.rb:17:in `employees?'
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 00:59:50 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `check_in' for #<Array:0x00007f91fb54bbd8>):
+     6:         <h2 align="center"><small>Register Record</small></h2>
+     7:         <hr class="colorgraph">
+     8:         <div class="form-group">
+     9:           <%= f.date_select :check_in, autofocus: true, :class => "form-control input-lg", :placeholder => "check in", required: true %>
+    10:         </div>
+    11: 
+    12:         <div class="form-group">
+  
+app/views/reports/new.html.erb:9:in `block in _app_views_reports_new_html_erb___1346293722828858351_70132481805400'
+app/views/reports/new.html.erb:5:in `_app_views_reports_new_html_erb___1346293722828858351_70132481805400'
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 01:00:38 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 428ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 01:03:16 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 481ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 01:03:37 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 457ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 01:04:07 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 451ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2018-10-14 01:12:08 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6xOVU8QiPhoizSWOf/5xeWu9ArhRg+y65YeoEEMC0hXY6kl8y+SwZ6JmWxalWxneEqOo6sPcF+dhmUmyAUSJ3w==", "reports"=>{"check_in"=>"2018-10-14T09:00", "employees_id"=>"3"}, "commit"=>"Register"}
+No template found for ReportsController#create, rendering head :no_content
+Completed 204 No Content in 252ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 01:13:15 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1064ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 01:13:20 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 453ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2018-10-14 01:15:10 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iIJB6fepXny9NTJxY9GNCBOP0fdHcTopZi10Sm+Gej8DC13lmd04lDcvNBYQEI91h/qnlI9LsYh+Ror5ZXhQDw==", "reports"=>{"check_in"=>"2018-10-14T09:00", "employees_id"=>"3"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/services/create_record.rb:21:in `build_body'
+app/services/create_record.rb:14:in `send!'
+app/services/create_record.rb:10:in `send'
+app/controllers/reports_controller.rb:9:in `create'
+Started POST "/reports" for 127.0.0.1 at 2018-10-14 01:15:31 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MJoaqMRVm0k5b5Mo61KO9Dx19JPpVWOQ6Ww2jGCPOBMDY8aHy5MVNLnE7bAx9+ZTRWtewXsKmM1tctcuIslj2Q==", "reports"=>{"check_in"=>"2018-10-14T09:00", "employees_id"=>"3"}, "commit"=>"Register"}
+Redirected to http://localhost:3000/reports
+Completed 302 Found in 381ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:15:31 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 423ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2018-10-14 01:16:03 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MJoaqMRVm0k5b5Mo61KO9Dx19JPpVWOQ6Ww2jGCPOBMDY8aHy5MVNLnE7bAx9+ZTRWtewXsKmM1tctcuIslj2Q==", "reports"=>{"check_in"=>"2018-10-14T09:00", "employees_id"=>"3"}, "commit"=>"Register"}
+Redirected to http://localhost:3000/reports
+Completed 302 Found in 314ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:16:04 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 409ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2018-10-14 01:16:40 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MJoaqMRVm0k5b5Mo61KO9Dx19JPpVWOQ6Ww2jGCPOBMDY8aHy5MVNLnE7bAx9+ZTRWtewXsKmM1tctcuIslj2Q==", "reports"=>{"check_in"=>"2018-10-14T09:00", "employees_id"=>"3"}, "commit"=>"Register"}
+Redirected to http://localhost:3000/reports
+Completed 302 Found in 330ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:16:40 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 820ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2018-10-14 01:18:13 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MJoaqMRVm0k5b5Mo61KO9Dx19JPpVWOQ6Ww2jGCPOBMDY8aHy5MVNLnE7bAx9+ZTRWtewXsKmM1tctcuIslj2Q==", "reports"=>{"check_in"=>"2018-10-14T09:00", "employees_id"=>"3"}, "commit"=>"Register"}
+Redirected to http://localhost:3000/reports
+Completed 302 Found in 395ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:18:13 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 402ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 01:21:40 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 639ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?companie_id=1" for 127.0.0.1 at 2018-10-14 01:21:42 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"companie_id"=>"1"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 459ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 01:21:45 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 385ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:21:51 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 414ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 01:22:07 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 420ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 01:26:29 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 436ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 01:26:52 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 462ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 01:34:18 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 660ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:34:53 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 417ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=2" for 127.0.0.1 at 2018-10-14 01:34:55 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"2"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 411ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:35:09 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 421ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?employee_id=3" for 127.0.0.1 at 2018-10-14 01:35:13 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"employee_id"=>"3"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 396ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:35:19 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 451ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:35:28 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 404ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 01:35:29 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1502ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:35:32 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 456ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:35:33 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 399ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 01:35:34 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 381ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:35:35 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 477ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:35:35 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:35:36 -0500
+Processing by EmployeesController#index as HTML
+Completed 200 OK in 703ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 395ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:35:37 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 407ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:35:38 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 406ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:35:38 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 416ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 01:35:41 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 472ms (Views: 123.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:35:42 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 446ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2018-10-14 01:35:45 -0500
+Processing by EmployeesController#new as HTML
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 417ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2018-10-14 01:35:49 -0500
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 427ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:36:03 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 437ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:36:17 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 392ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 01:36:32 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 445ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:36:40 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 486ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:45:31 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1251ms (Views: 860.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-10-14 01:45:34 -0500
+Processing by RecordsController#index as HTML
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 446ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:45:38 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 410ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-10-14 01:45:40 -0500
+Processing by RecordsController#index as HTML
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 433ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-10-14 01:45:49 -0500
+Processing by RecordsController#index as HTML
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 414ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-14 01:46:35 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 85ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-10-14 01:46:36 -0500
+Processing by RecordsController#index as HTML
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 418ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2018-10-14 01:46:38 -0500
+Processing by ReportsController#new as HTML
+  Rendering reports/new.html.erb within layouts/application
+  Rendered reports/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 87ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-10-14 01:47:16 -0500
+Processing by RecordsController#index as HTML
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 414ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-10-14 01:47:18 -0500
+Processing by RecordsController#new as HTML
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 446ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-14 01:47:19 -0500
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 389ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-10-14 01:47:35 -0500
+Processing by RecordsController#new as HTML
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 417ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-10-14 01:47:36 -0500
+Processing by RecordsController#index as HTML
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 404ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records/new" for 127.0.0.1 at 2018-10-14 01:48:08 -0500
+Processing by RecordsController#new as HTML
+  Rendering records/new.html.erb within layouts/application
+  Rendered records/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 440ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records" for 127.0.0.1 at 2018-10-14 01:48:11 -0500
+Processing by RecordsController#index as HTML
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 413ms (Views: 87.2ms | ActiveRecord: 0.0ms)
+
+

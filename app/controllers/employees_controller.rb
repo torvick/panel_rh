@@ -26,11 +26,4 @@ class EmployeesController < ApplicationController
 
   def new
   end
-
-  private
-
-  def companies?
-    @companies = GetCompanies.send(params)
-    @companies['companies'].nil? ? @companies = [] : @companies = @companies['companies']
-  end
 end
