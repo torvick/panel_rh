@@ -1,9 +1,8 @@
 class GetCompanies
 
   def initialize(args)
-    @token = args
-    puts "TOKEN: #{@token}"
-    @options = {
+    @token    = args[:current_user]
+    @options  = {
         headers: build_headers
     }
   end
@@ -23,7 +22,7 @@ class GetCompanies
 
   def build_headers
     {
-        "Authorization"  => "Bearer #{ENV['TOKEN']}" # @token
+        "Authorization"  => "Bearer #{@token}"
     }
   end
 

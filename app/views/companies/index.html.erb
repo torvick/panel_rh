@@ -27,7 +27,7 @@
           <td><%= companie['email'] %></td>
           <td><%= companie['phone'] %></td>
           <td><%= "#{companie['state']} #{companie['suburb']} #{companie['address']} #{companie['number_ext']} #{companie['number_int']} #{companie['postal_code']} " %></td>
-          <td><%= link_to 'Employees', employees_path(companie_id: companie['id']), :class => 'btn btn-primary' %></td>
+          <td><%= link_to 'Employees', employees_path(companie_id: companie['id'], created_at: params[:created_at]), :class => 'btn btn-primary' %></td>
         </tr>
         <% end %>
         </tbody>

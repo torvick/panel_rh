@@ -7,16 +7,16 @@ class BuildAuthorization
 
   def initialize(args)
     @args         = args
-    @access_token = args[:access_token]
-    @token_type   = args[:token_type]
-    @expires_in   = args[:expires_in]
-    @created_at   = args[:created_at]
+    @access_token = args['access_token']
+    @token_type   = args['token_type']
+    @expires_in   = args['expires_in']
+    @created_at   = args['created_at']
   end
 
   def build
     redis = Redis.new
-    return {success: true, message: "ok"} if redis.set(@token_type, @access_token)
-    {success: false, message: "error"}
+    return {success: true, message: "ok", created_at: @created_at} if redis.set(@created_at, @access_token)
+    {success: false, message: "error", created_at: nil}
   end
 
 end

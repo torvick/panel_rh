@@ -1,7 +1,7 @@
 class CreateEmployee
   def initialize(args)
     @args     = args
-    @token    = args[:token]
+    @token    = args[:current_user]
     @options  = { headers: build_headers }
   end
 
@@ -43,7 +43,7 @@ class CreateEmployee
 
   def build_headers
     {
-        "Authorization"  => "Bearer #{ENV['TOKEN']}" # @token
+        "Authorization"  => "Bearer #{@token}"
     }
   end
 end

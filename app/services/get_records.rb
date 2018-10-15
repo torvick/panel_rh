@@ -2,7 +2,7 @@ class GetRecords
   def initialize(args)
     @id_employee  = args[:employee_id]
     @id           = args[:record_id]
-    @token        = args
+    @token        = args[:current_user]
     @options      = {
         headers: build_headers,
         query:{}
@@ -25,7 +25,7 @@ class GetRecords
 
   def build_headers
     {
-        "Authorization"  => "Bearer #{ENV['TOKEN']}" # @token
+        "Authorization"  => "Bearer #{@token}"
     }
   end
 end

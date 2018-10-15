@@ -22,7 +22,7 @@
             <td><%= check['check_out'] %></td>
             <td><%= check['user_id'] %></td>
             <%if check['check_out'].nil? %>
-              <td><%= link_to 'check out', edit_record_path(id: check['id']), :class => 'btn btn-info' %></td>
+              <td><%= link_to 'check out', edit_record_path(id: check['id'], created_at: params[:created_at]), :class => 'btn btn-info' %></td>
             <% else %>
               <td style="color: blue;">Finish</td>
             <% end %>
@@ -31,7 +31,7 @@
         </tbody>
       </table>
       <div>
-        <%= link_to 'New Record', new_record_path(employee_id: params[:employee_id]), :class => 'btn btn-primary' %>
+        <%= link_to 'New Record', new_record_path(employee_id: params[:employee_id], created_at: params[:created_at]), :class => 'btn btn-primary' %>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ class EmployeesController < ApplicationController
     response = CreateEmployee.send(params)
     flash[:danger]  = "#{response['message']} #{response['errors']}" if response['success'] == false
     flash[:notice] = "#{response['message']}" if response['success'] == true
-    redirect_to employees_path()
+    redirect_to employees_path(created_at: params[:created_at])
   end
 
   def edit

@@ -30,13 +30,13 @@
             <td><%= employee['phone'] %></td>
             <td><%= "#{employee['state']} #{employee['suburb']} #{employee['address']} #{employee['number_ext']} #{employee['number_int']} #{employee['postal_code']} " %></td>
             <td><%= link_to 'Edit',     edit_employee_path(employee['id']), :class => 'btn btn-info' %></td>
-            <td><%= link_to 'Records',  records_path(employee_id: employee['id']), :class => 'btn btn-primary' %></td>
+            <td><%= link_to 'Records',  records_path(employee_id: employee['id'], created_at: params[:created_at]), :class => 'btn btn-primary' %></td>
           </tr>
         <% end %>
         </tbody>
       </table>
       <div>
-        <%= link_to 'New Employee', new_employee_path, :class => 'btn btn-primary' %>
+        <%= link_to 'New Employee', new_employee_path(created_at: params[:created_at]), :class => 'btn btn-primary' %>
       </div>
     </div>
   </div>

@@ -1,7 +1,10 @@
 class ApplicationController < ActionController::Base
+  before_action :current_user!
 
   def current_user!
-    @current_user = params[:user_api]
+    redis = Redis.new
+    @current_user = redis.get(params[:created_at])
+    params[:current_user] = @current_user
   end
 
   private
