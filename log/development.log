@@ -9183,3 +9183,164 @@ Processing by EmployeesController#index as HTML
 Completed 200 OK in 112ms (Views: 87.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/companies?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:04:29 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/application_controller.rb:6:in `current_user!'
+Started GET "/companies?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:04:38 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6789ms (Views: 6439.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:04:49 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 88ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 03:04:51 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 84ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 03:04:53 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 76ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:04:56 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 121ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:04:57 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 174ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:04:58 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 112ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:04:59 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 124ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:05:01 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:05:02 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539587844" for 127.0.0.1 at 2018-10-15 03:05:03 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539587844"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 107ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 03:23:47 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 593ms (Views: 565.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-15 03:23:49 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 92ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 03:23:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gS4u6rMaeWlP5xO6+HPrKGtE50DsyDOo5XoullMhGBXg+0hsTHF1Gx9lR7GAP5ZcynX8R0cEAW1n7DKbI+dmNw==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 702ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CommandError (ERR DB index is out of range):
+  
+app/services/build_authorization.rb:18:in `build'
+app/services/build_authorization.rb:5:in `build!'
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 03:25:21 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9t3xpRlfLI4PM8ihaJEk8mMpQL8kBH7w5vUpPz+V9TfFJC2KFpmi84+YtjmyNExVGjfq7bZbha1i68idfdOu/Q==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/?created_at=1539591922
+Completed 302 Found in 513ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539591922" for 127.0.0.1 at 2018-10-15 03:25:22 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539591922"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 96ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539591922" for 127.0.0.1 at 2018-10-15 03:25:39 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539591922"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 87ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539591922" for 127.0.0.1 at 2018-10-15 03:26:50 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539591922"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 362ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539591922" for 127.0.0.1 at 2018-10-15 03:27:54 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539591922"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1093ms (Views: 529.3ms | ActiveRecord: 0.0ms)
+
+
