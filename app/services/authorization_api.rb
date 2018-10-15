@@ -14,7 +14,7 @@ class AuthorizationApi
   end
 
   def build_url
-    'https://api-rh.herokuapp.com/api/v1/sessions'
+    ENV['URL_API'] + '/api/v1/sessions'
   end
 
   def build_headers

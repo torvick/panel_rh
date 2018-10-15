@@ -9,6 +9,7 @@ class RecordsController < ApplicationController
     response = CreateRecord.send(params)
     flash[:danger]  = "#{response['message']} #{response['errors']}" if response['success'] == false
     flash[:notice] = "#{response['message']}" if response['success'] == true
+    return redirect_to records_path(employee_id: params[:employee_id]) if !params[:employee_id].nil?
     redirect_to records_path()
   end
 

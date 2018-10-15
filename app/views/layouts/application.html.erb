@@ -13,20 +13,9 @@
   <div>
   <nav class="navbar navbar-expand-sm bg-dark navbar-darkt justify-content-end">
     <ul class="navbar-nav">
-      <%# if current_user!.nil?
-        puts "ajsdhjhaskdjhjasdhjksa", @current_user
-
-      %>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-      <%#else %>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
+        <%= link_to 'Home', root_path, :class => 'nav-link' %>
       </li>
         <li class="nav-item">
           <%= link_to 'Companies', companies_path, :class => 'nav-link' %>
@@ -35,12 +24,17 @@
           <%= link_to 'Employees', employees_path, :class => 'nav-link' %>
         </li>
       <li class="nav-item">
-        <%= link_to 'Reports', records_path, :class => 'nav-link' %>
+        <%= link_to 'Records', records_path, :class => 'nav-link' %>
       </li>
       <li class="nav-item">
         <%= link_to 'Reports', reports_path, :class => 'nav-link' %>
       </li>
-        <%# end %>
+      <li class="nav-item">
+        <%= link_to 'Login', login_path, :class => 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
     </ul>
   </nav>
   </div>

@@ -23,12 +23,12 @@ class CreateCheckOut
   end
 
   def build_url
-    "https://api-rh.herokuapp.com/api/v1/check_out/#{@args[:id]}"
+    ENV['URL_API'] + "/api/v1/check_out/#{@args[:id]}"
   end
 
   def build_headers
     {
-        "Authorization"  => "Bearer 63373da92c14164c1b56347a86f93283f472d0d4ede613348efcb49cc9f8188b"#@token
+        "Authorization"  => "Bearer #{ENV['TOKEN']}" # @token
     }
   end
 end

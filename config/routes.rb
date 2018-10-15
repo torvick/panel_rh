@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  root to: 'home#new'
+  root to: 'home#index'
+  get 'login' => 'home#new'
   resources :sessions
-  resources :home
   resources :companies
   resources :employees
   resources :reports
