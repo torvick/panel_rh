@@ -14,8 +14,11 @@ class BuildAuthorization
   end
 
   def build
-    redis = Redis.new(host: "redis-12668.c90.us-east-1-3.ec2.cloud.redislabs.com", port: 12668, password: 'Pk05hBCLwADjuJomBufSSWruji0zjFGh')
-    return {success: true, message: "ok", created_at: @created_at} if redis.set(@created_at, @access_token)
+    redis = Redis.new(host: ENV['URL_REDIS'], port: ENV['PORT_REDIS'], password: ENV['PASSWORD_REDIS'])
+    if redis.set(@created_at, @access_token)
+      redis.quit
+      return {success: true, message: "ok", created_at: @created_at}
+    end
     {success: false, message: "error", created_at: nil}
   end
 

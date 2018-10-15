@@ -4,8 +4,9 @@ class ApplicationController < ActionController::Base
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   def current_user
-    redis = Redis.new(host: "redis-12668.c90.us-east-1-3.ec2.cloud.redislabs.com", port: 12668, password: 'Pk05hBCLwADjuJomBufSSWruji0zjFGh')
+    redis = Redis.new(host: ENV['URL_REDIS'], port: ENV['PORT_REDIS'], password: ENV['PASSWORD_REDIS'])
     params[:current_user] = redis.get(params[:created_at])
+    redis.quit
     current_user = params[:current_user]
     @current_user = current_user
   end
