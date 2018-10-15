@@ -20,4 +20,16 @@ class ReportsController < ApplicationController
   #
   # def new
   # end
+  
+  def index
+    authorize Report
+  end
+
+  def create
+    authorize Report
+  end
+
+  def show
+    authorize Report
+  end
 end
