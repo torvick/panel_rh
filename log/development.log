@@ -9344,3 +9344,410 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 1093ms (Views: 529.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-15 08:35:17 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "panel_rh_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (540.6ms)[0m  [1m[35mCREATE DATABASE "panel_rh_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (454.0ms)[0m  [1m[35mCREATE DATABASE "panel_rh_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-10-15 08:35:51 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5179ms (Views: 4560.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 08:54:46 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 997ms (Views: 398.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-15 08:54:50 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 251ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 08:54:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MSOExgjyDxjAGRaimXYY+A0/AA7j3yM5EgLeTXhMfuD4PkVFunTXrSkl4YIMXrjpB8F3ONuXwwBaMCXXWL1DnA==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/services/authorization_api.rb:17:in `build_url'
+app/services/authorization_api.rb:13:in `send!'
+app/services/authorization_api.rb:9:in `send'
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 08:55:37 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oivn7gClj8xMJn7ICModET+Vs4alY+M6bKP+0E95T7h7mvHfne7XN2p001AslWuj4JacE+Xz5ti5ZIPfvpRQKA==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/?created_at=1539611741
+Completed 302 Found in 4588ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539611741" for 127.0.0.1 at 2018-10-15 08:55:41 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 470ms (Views: 272.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 08:55:50 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant CompaniesController::Company):
+  
+app/controllers/companies_controller.rb:3:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 08:56:20 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant CompaniesController::Company):
+  
+app/controllers/companies_controller.rb:3:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 08:57:23 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 364ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authorize' for #<CompaniesController:0x00007f8055a29928>):
+  
+app/controllers/companies_controller.rb:3:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 08:58:19 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 366ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authorize' for #<CompaniesController:0x00007f805337e5a8>):
+  
+app/controllers/companies_controller.rb:3:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 08:59:39 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<CompaniesController:0x00007f8055a9ac18>):
+  
+app/controllers/companies_controller.rb:3:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:00:31 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 467ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<CompaniesController:0x00007f80525f7290>):
+  
+app/controllers/companies_controller.rb:4:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:00:53 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<CompaniesController:0x00007f8055cc9688>):
+  
+app/controllers/companies_controller.rb:4:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:02:36 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 353ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<CompaniesController:0x00007f87cb9f8328>):
+  
+app/controllers/companies_controller.rb:4:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:02:58 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<CompaniesController:0x00007f87cd4b26a0>):
+  
+app/controllers/companies_controller.rb:4:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:04:55 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 456ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `admin?' for #<String:0x00007f87c99b0de0>):
+  
+app/policies/company_policy.rb:10:in `index?'
+app/controllers/companies_controller.rb:4:in `index'
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:05:41 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1971ms (Views: 517.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:05:49 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 871ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:07:36 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant EmployeesController::Employee):
+  
+app/controllers/employees_controller.rb:4:in `index'
+Started GET "/employees?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:08:03 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1334ms (Views: 504.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-10-15 09:08:11 -0500
+Processing by EmployeesController#index as HTML
+Completed 404 Not Found in 407ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539611741" for 127.0.0.1 at 2018-10-15 09:12:10 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539611741"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 992ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 09:12:40 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 309ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:12:46 -0500
+Processing by ReportsController#index as HTML
+Completed 404 Not Found in 402ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:13:52 -0500
+Processing by ReportsController#index as HTML
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.5ms)
+Completed 404 Not Found in 528ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 09:15:35 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 337ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:15:41 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.3ms)
+Completed 404 Not Found in 421ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:16:33 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.3ms)
+Completed 404 Not Found in 755ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:16:54 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.3ms)
+Completed 404 Not Found in 639ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:17:40 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.3ms)
+Completed 404 Not Found in 546ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:17:57 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.3ms)
+Completed 404 Not Found in 465ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:19:01 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.4ms)
+Completed 404 Not Found in 545ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:21:15 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.3ms)
+Completed 404 Not Found in 454ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/.jpg" for 127.0.0.1 at 2018-10-15 09:21:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:26:19 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (3.2ms)
+Completed 404 Not Found in 682ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:27:08 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.8ms)
+Completed 404 Not Found in 466ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:27:53 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.7ms)
+Completed 404 Not Found in 471ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:28:16 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.5ms)
+Completed 404 Not Found in 465ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:29:02 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.5ms)
+Completed 404 Not Found in 472ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2018-10-15 09:29:14 -0500
+Processing by ReportsController#index as HTML
+  Rendering public/404.html
+  Rendered public/404.html (0.5ms)
+Completed 404 Not Found in 407ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 09:29:19 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 428ms (Views: 169.2ms | ActiveRecord: 0.0ms)
+
+
