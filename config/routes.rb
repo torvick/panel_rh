@@ -2,7 +2,10 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
   get 'login' => 'home#new'
-  resources :sessions
+
+  resources :sessions do
+    collection { post :logout}
+  end
   resources :companies
   resources :employees
   resources :reports

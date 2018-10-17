@@ -39,7 +39,8 @@
       </li>
         <% else %>
       <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
+        <%= link_to 'Logout', logout_sessions_path(created_at: params[:created_at]), :class => 'nav-link', data: {:confirm => "You sure?" }, method: :post %>
+        <!--a class="nav-link" href="#">Logout</a-->
       </li>
         <% end %>
     </ul>

@@ -8,4 +8,10 @@ class SessionsController < ApplicationController
     return redirect_to login_path() if response_build[:created_at].nil?
     redirect_to root_path(created_at: response_build[:created_at])
   end
+
+  def show
+    response = DestroySession.send(params)
+    puts response
+    redirect_to root_path()
+  end
 end
