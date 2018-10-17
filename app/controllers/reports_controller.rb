@@ -23,6 +23,12 @@ class ReportsController < ApplicationController
   
   def index
     authorize Report
+    @companies = GetCompanies.send(params)
+    @companies['companies'].nil? ? @companies = [] : @companies = @companies['companies']
+    @employees = GetUsers.send(params)
+    @employees['users'].nil? ? @employees = [] : @employees = @employees['users']
+    @reports = GetRecords.send(params)
+    @reports['registrations'].nil? ? @reports = [] : @reports = @reports['registrations']
   end
 
   def create

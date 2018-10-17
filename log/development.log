@@ -9751,3 +9751,2872 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 428ms (Views: 169.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-15 14:49:34 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Started GET "/" for 127.0.0.1 at 2018-10-15 14:49:38 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5517ms (Views: 5478.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2414ms (Views: 2402.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-15 14:49:48 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 66ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 14:49:52 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Xj1I8GGpmwyt/rJ+QWxd34DoJfg/CkqxOC5i2rR8GE4ZTSgcwB+2duLDelsLRFmdP3Xodi0yROM0kIRSiDNHQ==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/services/authorization_api.rb:17:in `build_url'
+app/services/authorization_api.rb:13:in `send!'
+app/services/authorization_api.rb:9:in `send'
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 14:57:06 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwJye9DT4uh+Hawe15rvcPquSGmKZ4QnEQogtzRIQn2as2RKTZi6E1hPAYbzxZnCJa1n/Mr3gcXEzV24xaVd7Q==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 13562ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-15 14:57:19 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 730ms (Views: 463.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 14:57:41 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"shzjh9uzshGivjZtX660UQ2RcUWLOeTE/J3rX5sjt8FrrfW2Rvjq6oTsm/V78cLj0pJe0Mup4SYpWpZQas6oUQ==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1120ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-15 14:57:43 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 374ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-15 14:58:47 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZS+pJVwm6dsHGHXi7mc9QOH+IK3Dg0MUEEyi4/OSz1C8nr8UwW2xICFK2HrKOEvyPv0POIMTRvbFi9/sAn/QwA==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/?created_at=1539633528
+Completed 302 Found in 1219ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539633528" for 127.0.0.1 at 2018-10-15 14:58:49 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539633528"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 348ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539633528" for 127.0.0.1 at 2018-10-15 14:58:55 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539633528"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 922ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539633528" for 127.0.0.1 at 2018-10-15 15:00:23 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539633528"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1209ms (Views: 318.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539633528" for 127.0.0.1 at 2018-10-15 15:00:29 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539633528"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 884ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-15 16:31:52 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 722ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 08:43:48 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 591ms (Views: 556.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-17 08:43:52 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 145ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 08:43:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JdH5YGF0n6wzbW3m7Bjn3/CJ7bN6Bz7xw6Z7PTLWih2grm7rnFn3Ejf1a5X7MPAr85XwtpIaFR5gBYBi18qnqQ==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/services/authorization_api.rb:17:in `build_url'
+app/services/authorization_api.rb:13:in `send!'
+app/services/authorization_api.rb:9:in `send'
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 08:45:18 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CK/Gr5ptNtOziHFwBgOdpe0rMWqFXqSNae33tyyzzv0ys7VFUvMohzcZD2fWUdVVYYISyUeMrBgfRtdfB2c3+A==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2308ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-17 08:45:20 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 447ms (Views: 443.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 08:45:31 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xzYqqkgDWquOk+6stxXvvqrqYj6g+cNNJG7AeuyvVHz9KllAgJ1E/woCkLtnR6dOJkNBnWIry9hSxeCSx3uteQ==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/?created_at=1539783932
+Completed 302 Found in 507ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:45:32 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:45:43 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 443ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:46:56 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 543ms (Views: 216.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:47:05 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 357ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:49:46 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 511ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:51:04 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1508ms (Views: 165.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:56:40 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 524ms (Views: 186.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:58:50 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 527ms (Views: 208.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:59:05 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 514ms (Views: 219.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 08:59:24 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 447ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:00:15 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 468ms (Views: 171.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:00:54 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 478ms (Views: 163.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:02:00 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 332ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:06:28 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 4487ms (Views: 4150.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:07:58 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 547ms (Views: 247.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:08:13 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 378ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:08:30 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2544ms (Views: 2248.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:08:46 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2521ms (Views: 2225.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:09:11 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 540ms (Views: 229.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:11:09 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3884ms (Views: 3566.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:12:07 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 534ms (Views: 213.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:12:28 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 514ms (Views: 185.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:13:31 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 495ms (Views: 176.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:13:39 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 351ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:14:09 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 452ms (Views: 163.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:14:32 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 387ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:14:42 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 451ms (Views: 174.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:15:59 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 511ms (Views: 173.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:17:04 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 464ms (Views: 176.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 09:24:31 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 802ms (Views: 793.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:24:34 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 392ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:26:29 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 546ms (Views: 224.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:27:36 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 404ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:29:02 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 399ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:30:31 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 397ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:30:54 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 458ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:31:10 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 370ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:31:39 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 388ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:31:48 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 362ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:32:08 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 354ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:32:29 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 370ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:32:48 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 375ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:32:57 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 346ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:33:04 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 477ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:33:52 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 492ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:33:54 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4640ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:34:02 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 354ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:34:11 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 361ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:34:13 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 366ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:35:56 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3343ms (Views: 192.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:35:59 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 368ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:36:03 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 647ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:36:07 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 461ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:36:37 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 527ms (Views: 190.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:36:37 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 497ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:36:42 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 327ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:37:23 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 551ms (Views: 196.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:37:28 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 375ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:37:31 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 378ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:37:34 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 416ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:38:32 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 409ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:39:59 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 500ms (Views: 206.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:40:03 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 375ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:41:33 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 528ms (Views: 209.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:41:37 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 404ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:41:53 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 519ms (Views: 199.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:41:54 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 373ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:10 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 486ms (Views: 185.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:13 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 344ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:17 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 368ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:20 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 381ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:39 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 361ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:43 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 375ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:44 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 360ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:48 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539783932" for 127.0.0.1 at 2018-10-17 09:42:50 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539783932"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 366ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 11:03:47 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 815ms (Views: 805.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-17 11:03:50 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 58ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 11:03:59 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TQF6jF2JVXuFesB+EwQh8vG9iZ6cep95FXntHz3wOJ7Ifu0HoKQ9xYHixg0ELDYG8qGUm3RntJa22hZA2OwVKg==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/services/authorization_api.rb:17:in `build_url'
+app/services/authorization_api.rb:13:in `send!'
+app/services/authorization_api.rb:9:in `send'
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 11:04:38 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uvXWLuqfSGVzTPKhMbkSP1YieqbxEfT1UvgSh7OimDiA6aXEIgFWMffdjLbh61rP2otZBTPD/GAkUzJvmHZhPQ==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 824ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-17 11:04:39 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 409ms (Views: 403.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 11:04:55 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w50To2W+HoKf3EuX+ieGiwe1RKIGrNQ/tdl6PyxANhP5gWBJrSAA1htNNYAqdc57ixxnAcR+3KrDclrXB5TPFg==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/?created_at=1539792295
+Completed 302 Found in 568ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539792295" for 127.0.0.1 at 2018-10-17 11:04:55 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539792295"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539792295" for 127.0.0.1 at 2018-10-17 11:04:59 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539792295"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 391ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539792295" for 127.0.0.1 at 2018-10-17 11:05:11 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539792295"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 420ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539792295" for 127.0.0.1 at 2018-10-17 11:05:26 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539792295"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 625ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539792295" for 127.0.0.1 at 2018-10-17 11:05:28 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539792295"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 732ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539792295" for 127.0.0.1 at 2018-10-17 11:05:31 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539792295"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 348ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539792295" for 127.0.0.1 at 2018-10-17 11:05:45 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539792295"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 12:28:03 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 533ms (Views: 504.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-17 12:28:06 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 76ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 12:28:17 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l/yyCNGiIEc5GnWpgJnDSmHG7mOjKHo9d75KHqQQCPASgyWDLI9I+T2Cc9qXsdS+YtrzZks1UdLUHbFBQQwlRA==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/services/authorization_api.rb:17:in `build_url'
+app/services/authorization_api.rb:13:in `send!'
+app/services/authorization_api.rb:9:in `send'
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 12:31:10 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MgeQZkO+cnW/aYgA0wWmvLX1frh26WhMiD5pZaSdfr0IG+OMiyBsITv49hcDV+5MOVxdG7Q7YNn+lUmNj0mHuA==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3966ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-17 12:31:14 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 571ms (Views: 547.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 12:31:25 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EqM/sCExTT+F+xLylZmQXr/avAOXrLSJVWzgDwGNFY4ov0xa6a9TawFqbOVFy9iuM3OfoFV+vBwjx8DnKlnsiw==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/?created_at=1539797485
+Completed 302 Found in 2274ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539797485" for 127.0.0.1 at 2018-10-17 12:31:27 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539797485"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797485" for 127.0.0.1 at 2018-10-17 12:31:30 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797485"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 684ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797485" for 127.0.0.1 at 2018-10-17 12:31:33 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797485"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 843ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797485" for 127.0.0.1 at 2018-10-17 12:31:36 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797485"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 738ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797485" for 127.0.0.1 at 2018-10-17 12:31:38 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797485"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 72ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797485" for 127.0.0.1 at 2018-10-17 12:31:40 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797485"}
+Started GET "/companies?created_at=1539797485" for 127.0.0.1 at 2018-10-17 12:31:41 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797485"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 839ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 545ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 12:32:14 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 95ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 12:32:14 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 12:32:16 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-17 12:32:17 -0500
+Processing by HomeController#new as HTML
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 68ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2018-10-17 12:32:26 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HVmBieRMLz2gOjynhxmDNAprgap4K3y29PQRq6UGNl6YJhYCGWFHg6SiOtSQMZTACXecr5A2V1lXV+r0QBob6g==", "sessions"=>{"email"=>"vh.urquides@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/?created_at=1539797547
+Completed 302 Found in 805ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:32:27 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:32:30 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 380ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:32:34 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 360ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:32:36 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 372ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:34:59 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 732ms (Views: 374.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:35:05 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 361ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:35:46 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 429ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:36:46 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 549ms (Views: 219.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:39:01 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 567ms (Views: 237.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:39:07 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 446ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:16 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 656ms (Views: 257.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:20 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 397ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:23 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 414ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:48 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 455ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:50 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 390ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:52 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 435ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:53 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:54 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:55 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 417ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:55 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 418ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:56 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 414ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:58 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 403ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:41:59 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 434ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:14 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 459ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:19 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 419ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:22 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 395ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:25 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 376ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:28 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 396ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:30 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 423ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:31 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 380ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:33 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:34 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 419ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:35 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 397ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:42:35 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 398ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:45:46 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 582ms (Views: 244.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:45:47 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 377ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:46:01 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 430ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:48:37 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 717ms (Views: 260.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:48:56 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 768ms (Views: 217.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:49:23 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 501ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:49:30 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 683ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:49:32 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 467ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:49:55 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 417ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:49:55 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1656ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:05 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 362ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:10 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 434ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:12 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 649ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:19 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 652ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:23 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 562ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:25 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 497ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:44 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 360ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:50:55 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 493ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:51:32 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 524ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:51:39 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 599ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:52:23 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 661ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:52:51 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 696ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:52:55 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 455ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:52:57 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 998ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:53:00 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 418ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:53:03 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 611ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:53:11 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 727ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:53:13 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 434ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:53:17 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 497ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:54:27 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 624ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:56:42 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 740ms (Views: 291.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:56:46 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 370ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:56:49 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 386ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 12:56:55 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 857ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:46 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 567ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:47 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 440ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:48 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 393ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:50 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 375ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:51 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 456ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:52 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 66ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:53 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 411ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:09:54 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 389ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:28 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 476ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:28 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 397ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:31 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 435ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:36 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 409ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:39 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 500ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:41 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 409ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:43 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 384ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:45 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 438ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:48 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:49 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 461ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:51 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 429ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:11:52 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 391ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:12:22 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 414ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:12:25 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 372ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:12:29 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 409ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:12:33 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 466ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:13:11 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 457ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:13:15 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 375ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:13:17 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 532ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:13:22 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 412ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:13:27 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 373ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:10 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 530ms (Views: 191.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:15 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 362ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:23 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 458ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:26 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:28 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 402ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:32 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 383ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7647ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:36 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 368ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:51 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 500ms (Views: 169.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:14:56 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 411ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:15:00 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 390ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:15:03 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 391ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:15:07 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 419ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:15:11 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 455ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:15:20 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 448ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:02 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 460ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:03 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 392ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:05 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 360ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:08 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 497ms (Views: 152.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:10 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 412ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:13 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 418ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:15 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 57ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:17 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 427ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:19 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 447ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:20 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 380ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:53 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 464ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:54 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 386ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:16:57 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 374ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:03 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 390ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:05 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 436ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:06 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 415ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:07 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:09 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 387ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:10 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 432ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:11 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 389ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:12 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 70ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:13 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 385ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:43 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 424ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 13:17:43 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 364ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:12 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18288ms (Views: 792.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:33 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 416ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:38 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 489ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:41 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 376ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:44 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 442ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:45 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 422ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:51 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 362ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:57 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 404ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:23:59 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 361ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:24:30 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 555ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:24:38 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 520ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:24:40 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:24:40 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 572ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 357ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:24:41 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 421ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:24:43 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 594ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:27:58 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 537ms (Views: 216.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:01 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 385ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:03 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 347ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:04 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 53ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:05 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 342ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:07 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 341ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:07 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 340ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-17 14:28:09 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:13 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 431ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:16 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 332ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:17 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 354ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:18 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 368ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:28:20 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 366ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:29:11 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 378ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:29:26 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 362ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:29:37 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 491ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:30:15 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 514ms (Views: 179.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:30:15 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 381ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:30:18 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 403ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:30:21 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 350ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:30:26 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 357ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:31:38 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 531ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:31:52 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 356ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:31:55 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 361ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:31:56 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 354ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:31:58 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 392ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:05 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 428ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:06 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 362ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:08 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 360ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:15 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 343ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:18 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 434ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:19 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 561ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:21 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:22 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 345ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:23 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 437ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:32:24 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 376ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:33:23 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 559ms (Views: 216.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:33:49 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 372ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:13 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 487ms (Views: 189.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:16 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:17 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+Completed 200 OK in 1202ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3250ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:24 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 342ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:26 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 433ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:28 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 375ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:29 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:31 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1147ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:33 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 561ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:34 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 341ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:34:58 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 449ms (Views: 169.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:01 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 366ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:02 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 322ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:04 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 345ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:06 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 539ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:07 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 348ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:09 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1371ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:33 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 508ms (Views: 176.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:36 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 404ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:38 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 324ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:40 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 351ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:35:42 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 344ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:38:22 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 990ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:38:53 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 908ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:39:25 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 939ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:40:03 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 940ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:40:13 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 868ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:40:47 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2113ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:41:21 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 864ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:46:27 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 7692ms (Views: 5385.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:46:47 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1014ms (Views: 168.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:48:09 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1313ms (Views: 432.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:49:01 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1373ms (Views: 419.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:49:22 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1041ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:50:32 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1293ms (Views: 422.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:50:43 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 2033ms (Views: 1148.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:51:16 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3117ms (Views: 378.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:51:55 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1474ms (Views: 358.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:52:09 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1204ms (Views: 364.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:52:28 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1103ms (Views: 176.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:52:58 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1234ms (Views: 188.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:53:12 -0500
+Processing by CompaniesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering companies/index.html.erb within layouts/application
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 495ms (Views: 193.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:53:13 -0500
+Processing by EmployeesController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering employees/index.html.erb within layouts/application
+  Rendered employees/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 509ms (Views: 189.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/records?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:53:15 -0500
+Processing by RecordsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering records/index.html.erb within layouts/application
+  Rendered records/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 432ms (Views: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reports?created_at=1539797547" for 127.0.0.1 at 2018-10-17 14:53:16 -0500
+Processing by ReportsController#index as HTML
+  Parameters: {"created_at"=>"1539797547"}
+  Rendering reports/index.html.erb within layouts/application
+  Rendered reports/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1063ms (Views: 150.3ms | ActiveRecord: 0.0ms)
+
+
